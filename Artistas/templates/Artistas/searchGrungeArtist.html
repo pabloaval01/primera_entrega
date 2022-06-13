@@ -1,0 +1,24 @@
+{% extends "artistas/padre.html" %}
+{% load static %}
+{% block contentHead %}
+{% endblock %}
+
+{% block contentHeader %}
+<h3>Search for your favorite Grunge Artist</h3>
+{% endblock %}
+{% block contentServices %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Insert an artists:</h1>
+            <form action="{% url 'searchGrungeArtist_result' %}" method="GET">
+                <br>
+                <input type="text" name="name" placeholder="NAME" id="name">
+                <br>
+                <input type="submit" value="Find">
+            </form> 
+        </div>
+    </div>
+</div>
+{% endblock %}

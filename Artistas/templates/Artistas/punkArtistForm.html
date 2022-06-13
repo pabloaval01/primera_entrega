@@ -1,0 +1,26 @@
+{% extends "artistas/padre.html" %}
+{% load static %}
+{% block contentHead %}
+{% endblock %}
+
+{% block contentHeader %}
+<h3>Forms For Punk Artists</h3>
+{% endblock %}
+{% block contentServices %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Complete the data of the albums:</h1>
+            <form action="" method="POST">{% csrf_token %}
+                <br>
+                <table>
+                    {{punkArtist.as_table}}
+                </table>   
+                <br>
+                <input type="submit" value="Send Form">
+            </form> 
+        </div>
+    </div>
+</div>
+{% endblock %}

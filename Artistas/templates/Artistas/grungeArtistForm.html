@@ -1,0 +1,27 @@
+{% extends "artistas/padre.html" %}
+{% load static %}
+{% block contentHead %}
+{% endblock %}
+
+{% block contentHeader %}
+<h3>Forms For Grunge Artist</h3>
+{% endblock %}
+{% block contentServices %}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Complete the fields of the Artist</h1>
+            <form action="" method="POST">{% csrf_token %}
+                <br>
+                <table>
+                    {{myform.as_table}}
+                </table>
+                <br>
+                <input type="submit" value="Send Form">
+            </form> 
+        </div>
+    </div>
+</div>
+
+{% endblock %}
