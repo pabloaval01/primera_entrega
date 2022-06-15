@@ -1,0 +1,24 @@
+{% extends "artistas/padre.html" %}
+{% load static %}
+{% block contentHead %}
+{% endblock %}
+
+{% block contentHeader %}
+<h3>Search for your favorite Funk Album</h3>
+{% endblock %}
+{% block contentServices %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Insert an Album:</h1>
+            <form action="{% url 'searchFunkAlbum_result' %}" method="GET">
+                <br>
+                <input type="text" name="title" placeholder="TITLE" id="title">
+                <br>
+                <input type="submit" value="Find">
+            </form> 
+        </div>
+    </div>
+</div>
+{% endblock %}

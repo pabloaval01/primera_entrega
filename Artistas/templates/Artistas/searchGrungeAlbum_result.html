@@ -1,0 +1,31 @@
+{% extends "artistas/padre.html" %}
+{% load static %}
+{% block contentHead %}
+{% endblock %}
+
+{% block contentHeader %}
+<h3>Search result:</h3>
+{% endblock %}
+{% block contentServices %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Searching Album's</h1>
+                {% if title %}
+                <ul>
+                    {% for t in title %}
+                    <li><p>Title:</p>{{t.title}}</li>
+                    <br>
+                    <li><p>Songs Number:</p>{{t.songs_number}}</li>
+                    <br>
+                    <li><p>Launch Year:</p>{{t.launch_year}}</li>
+                    <br>
+                    <br>
+                    {% endfor %}
+                </ul>   
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
