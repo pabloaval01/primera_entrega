@@ -28,7 +28,7 @@
 | /searchPunkAlbum           | Search Form for Punk Album's       |
 | /searchPunkAlbum_result    | Punk Album's Search Results Form   |
 | /searchFunkAlbum           | Search Form for Funk Album's       |
-|searchFunkAlbum_result      | Funk Album's Search Results Form   |
+| /searchFunkAlbum_result    | Funk Album's Search Results Form   |
 
 
 # Install dependencies from the "Requirements.txt" file
